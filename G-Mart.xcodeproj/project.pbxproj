@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		22A6867180DE26C81C55B3C0 /* Pods_G_Mart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86E3991D1474DA7CCF4E94EB /* Pods_G_Mart.framework */; };
-		FD1FF203228FE02E007F3884 /* Localizer.strings in Resources */ = {isa = PBXBuildFile; fileRef = FD1FF205228FE02E007F3884 /* Localizer.strings */; };
 		FD1FF20B228FE4B5007F3884 /* BaseCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1FF20A228FE4B5007F3884 /* BaseCells.swift */; };
 		FD1FF20D228FE50C007F3884 /* ProgressBars.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1FF20C228FE50C007F3884 /* ProgressBars.swift */; };
 		FD1FF20F228FE549007F3884 /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1FF20E228FE549007F3884 /* Alerts.swift */; };
@@ -31,13 +30,14 @@
 		FD737E13228FD92A007A6A5D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD737E05228FD92A007A6A5D /* AppDelegate.swift */; };
 		FD737E16228FDA15007A6A5D /* ServerErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD737E15228FDA15007A6A5D /* ServerErrorModel.swift */; };
 		FD737E18228FDA46007A6A5D /* BaseRequestResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD737E17228FDA46007A6A5D /* BaseRequestResponseModel.swift */; };
+		FDEED78D229163AB006BAF90 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FDEED78F229163AB006BAF90 /* Localizable.strings */; };
+		FDEED792229164CF006BAF90 /* GmartTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEED791229164CF006BAF90 /* GmartTheme.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0FC1036F555A7FDE6877D6DD /* Pods-G-Mart.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-G-Mart.debug.xcconfig"; path = "Pods/Target Support Files/Pods-G-Mart/Pods-G-Mart.debug.xcconfig"; sourceTree = "<group>"; };
 		86E3991D1474DA7CCF4E94EB /* Pods_G_Mart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_G_Mart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F58F51D72CFFD5559506FF7C /* Pods-G-Mart.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-G-Mart.release.xcconfig"; path = "Pods/Target Support Files/Pods-G-Mart/Pods-G-Mart.release.xcconfig"; sourceTree = "<group>"; };
-		FD1FF204228FE02E007F3884 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizer.strings; sourceTree = "<group>"; };
 		FD1FF20A228FE4B5007F3884 /* BaseCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCells.swift; sourceTree = "<group>"; };
 		FD1FF20C228FE50C007F3884 /* ProgressBars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBars.swift; sourceTree = "<group>"; };
 		FD1FF20E228FE549007F3884 /* Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alerts.swift; sourceTree = "<group>"; };
@@ -62,6 +62,8 @@
 		FD737E05228FD92A007A6A5D /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FD737E15228FDA15007A6A5D /* ServerErrorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerErrorModel.swift; sourceTree = "<group>"; };
 		FD737E17228FDA46007A6A5D /* BaseRequestResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRequestResponseModel.swift; sourceTree = "<group>"; };
+		FDEED78E229163AB006BAF90 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		FDEED791229164CF006BAF90 /* GmartTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GmartTheme.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +137,7 @@
 				FD737DFF228FD92A007A6A5D /* Controllers */,
 				FD737DF8228FD92A007A6A5D /* API Request Manger */,
 				FD737DF4228FD92A007A6A5D /* Models */,
+				FDEED790229164B4006BAF90 /* Theme */,
 				FD737DED228FD92A007A6A5D /* Resources */,
 				FD737DF6228FD92A007A6A5D /* Utilities & Reusable Classes */,
 			);
@@ -198,7 +201,7 @@
 			isa = PBXGroup;
 			children = (
 				FD737DFE228FD92A007A6A5D /* LanguageManager.swift */,
-				FD1FF205228FE02E007F3884 /* Localizer.strings */,
+				FDEED78F229163AB006BAF90 /* Localizable.strings */,
 			);
 			path = "Localization Manager";
 			sourceTree = "<group>";
@@ -206,8 +209,8 @@
 		FD737DFF228FD92A007A6A5D /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				FD737E00228FD92A007A6A5D /* LoginFlow */,
 				FD737E02228FD92A007A6A5D /* Essentials */,
+				FD737E00228FD92A007A6A5D /* LoginFlow */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -223,11 +226,19 @@
 		FD737E02228FD92A007A6A5D /* Essentials */ = {
 			isa = PBXGroup;
 			children = (
+				FD737E05228FD92A007A6A5D /* AppDelegate.swift */,
 				FD737E03228FD92A007A6A5D /* CustomNavigation.swift */,
 				FD737E04228FD92A007A6A5D /* ParentViewController.swift */,
-				FD737E05228FD92A007A6A5D /* AppDelegate.swift */,
 			);
 			path = Essentials;
+			sourceTree = "<group>";
+		};
+		FDEED790229164B4006BAF90 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				FDEED791229164CF006BAF90 /* GmartTheme.swift */,
+			);
+			path = Theme;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,8 +302,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD737E06228FD92A007A6A5D /* Assets.xcassets in Resources */,
+				FDEED78D229163AB006BAF90 /* Localizable.strings in Resources */,
 				FD737E07228FD92A007A6A5D /* LaunchScreen.storyboard in Resources */,
-				FD1FF203228FE02E007F3884 /* Localizer.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,6 +391,7 @@
 				FD1FF213228FE5A9007F3884 /* ViewAnchorHelper.swift in Sources */,
 				FD737E13228FD92A007A6A5D /* AppDelegate.swift in Sources */,
 				FD737E12228FD92A007A6A5D /* ParentViewController.swift in Sources */,
+				FDEED792229164CF006BAF90 /* GmartTheme.swift in Sources */,
 				FD1FF217228FE6D8007F3884 /* GeneralErrors.swift in Sources */,
 				FD1FF20B228FE4B5007F3884 /* BaseCells.swift in Sources */,
 			);
@@ -388,20 +400,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		FD1FF205228FE02E007F3884 /* Localizer.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FD1FF204228FE02E007F3884 /* en */,
-			);
-			name = Localizer.strings;
-			sourceTree = "<group>";
-		};
 		FD737DEF228FD92A007A6A5D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				FD737DF0228FD92A007A6A5D /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		FDEED78F229163AB006BAF90 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FDEED78E229163AB006BAF90 /* en */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
