@@ -13,11 +13,21 @@ class LoginViewModel{
     let apiRequest = APIRequest()
     
     func validateEmailAndPassword(email:String,password:String) throws{
-        if !email.isEmail(){
+        if password.withoutSpaces() == "" && email.withoutSpaces() == ""{
+            throw AppErrors.enterEmailAndPassword
+        }else if email.withoutSpaces() == ""{
+            throw AppErrors.enterEmail
+        }else if password.withoutSpaces() == ""{
+            throw AppErrors.enterPassword
+        }else if !email.isEmail(){
             throw AppErrors.invalidEmail
         }else if password.count < 3{
             throw AppErrors.invalidPasswordlenght
         }
+        
+        
+        
+        
     }
     
     

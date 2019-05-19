@@ -10,7 +10,7 @@ import UIKit
 
 
 
-protocol AppColors {
+ protocol AppColors {
     var theme:UIColor{get}
     var button1:UIColor{get}
     var button2:UIColor{get}
@@ -18,6 +18,8 @@ protocol AppColors {
     
     var text1:UIColor{get}
     var text2:UIColor{get}
+    var text3:UIColor{get}
+    var text4:UIColor{get}
     
     var seperator1:UIColor{get}
     
@@ -26,7 +28,7 @@ protocol AppColors {
 }
 
 class Colors{
-    static let current = CurrentTheme()
+     static let current = CurrentTheme()
 }
 
 class CurrentTheme:AppColors{
@@ -49,6 +51,15 @@ class CurrentTheme:AppColors{
         return #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
     }
     
+    var text3: UIColor{
+        return #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+    }
+    
+    var text4: UIColor{
+        return #colorLiteral(red: 0.328776598, green: 0.329051435, blue: 0.3288191557, alpha: 1)
+    }
+    
+    
     var seperator1: UIColor{
         return #colorLiteral(red: 0.7167531252, green: 0.7136695981, blue: 0.7168356776, alpha: 1)
     }
@@ -62,11 +73,11 @@ class CurrentTheme:AppColors{
 
 class AppFonts{
   
-    func get(name:FontsName,size:FontsSize)->UIFont{
+    static func get(name:FontsName,size:FontsSize)->UIFont{
         return UIFont.init(name: name.rawValue, size: size.rawValue)!
     }
     
-    func adjust(size:CGFloat)->CGFloat{
+    static func adjust(size:CGFloat)->CGFloat{
         return size
     }
     
@@ -75,9 +86,11 @@ class AppFonts{
 
 enum FontsName:String {
     case regular = "HelveticaNeue"
+    case medium = "HelveticaNeue-Medium"
     case bold = "HelveticaNeue-Bold"
     case light = "HelveticaNeue-Light"
 }
+
 
 enum FontsSize:CGFloat {
     case h1 = 30
@@ -87,11 +100,12 @@ enum FontsSize:CGFloat {
     case h5 = 22
     case h6 = 20
     case h7 = 18
-    case h8 = 16
-    case h9 = 15
-    case h10 = 14
-    case h11 = 13
-    case h12 = 12
+    case h8 = 17
+    case h9 = 16
+    case h10 = 15
+    case h11 = 14
+    case h12 = 13
+    case h13 = 12
 }
 
 

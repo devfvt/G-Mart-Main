@@ -32,6 +32,8 @@
 		FD737E18228FDA46007A6A5D /* BaseRequestResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD737E17228FDA46007A6A5D /* BaseRequestResponseModel.swift */; };
 		FDEED78D229163AB006BAF90 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FDEED78F229163AB006BAF90 /* Localizable.strings */; };
 		FDEED792229164CF006BAF90 /* GmartTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEED791229164CF006BAF90 /* GmartTheme.swift */; };
+		FDEED79422916F59006BAF90 /* CustomTextfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEED79322916F59006BAF90 /* CustomTextfield.swift */; };
+		FDEED79622917218006BAF90 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEED79522917218006BAF90 /* AppConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +66,8 @@
 		FD737E17228FDA46007A6A5D /* BaseRequestResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRequestResponseModel.swift; sourceTree = "<group>"; };
 		FDEED78E229163AB006BAF90 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		FDEED791229164CF006BAF90 /* GmartTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GmartTheme.swift; sourceTree = "<group>"; };
+		FDEED79322916F59006BAF90 /* CustomTextfield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextfield.swift; sourceTree = "<group>"; };
+		FDEED79522917218006BAF90 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +188,8 @@
 				FD1FF210228FE578007F3884 /* Pickers.swift */,
 				FD1FF212228FE5A9007F3884 /* ViewAnchorHelper.swift */,
 				FD1FF214228FE62E007F3884 /* Validators.swift */,
+				FDEED79322916F59006BAF90 /* CustomTextfield.swift */,
+				FDEED79522917218006BAF90 /* AppConstants.swift */,
 			);
 			path = "Utilities & Reusable Classes";
 			sourceTree = "<group>";
@@ -377,6 +383,8 @@
 				FD1FF20F228FE549007F3884 /* Alerts.swift in Sources */,
 				FD737E18228FDA46007A6A5D /* BaseRequestResponseModel.swift in Sources */,
 				FD737E10228FD92A007A6A5D /* LoginView.swift in Sources */,
+				FDEED79622917218006BAF90 /* AppConstants.swift in Sources */,
+				FDEED79422916F59006BAF90 /* CustomTextfield.swift in Sources */,
 				FD1FF215228FE62E007F3884 /* Validators.swift in Sources */,
 				FD737E0C228FD92A007A6A5D /* URLManager.swift in Sources */,
 				FD737E09228FD92A007A6A5D /* LoginViewModel.swift in Sources */,
